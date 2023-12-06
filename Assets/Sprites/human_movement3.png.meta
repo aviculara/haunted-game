@@ -1,76 +1,67 @@
 fileFormatVersion: 2
-guid: d1d09bdca84850c4cbcbdf0086e006dd
+guid: 277b0997366820441a8286b0951af78a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -9031336372078804744
-    second: human_movement_0
+      213: 7066846996841337128
+    second: human_movement3_0
   - first:
-      213: 9031676363721699440
-    second: human_movement_1
+      213: -3413264545422145937
+    second: human_movement3_1
   - first:
-      213: -312099433825241084
-    second: human_movement_2
+      213: -7210329006641096885
+    second: human_movement3_2
   - first:
-      213: -3715578187452443613
-    second: human_movement_3
+      213: -4774496735107971926
+    second: human_movement3_3
   - first:
-      213: -3099075522702658183
-    second: human_movement_4
+      213: -1222419959613869000
+    second: human_movement3_4
   - first:
-      213: 6852724541190366406
-    second: human_movement_5
+      213: 2154088165605597871
+    second: human_movement3_5
   - first:
-      213: -3046146566392736252
-    second: human_movement_6
+      213: 5857454993191879230
+    second: human_movement3_6
   - first:
-      213: -8402542034968688945
-    second: human_movement_7
+      213: -2343283141791464611
+    second: human_movement3_7
   - first:
-      213: -5870350879528217162
-    second: human_movement_8
+      213: -8072170691158850611
+    second: human_movement3_8
   - first:
-      213: 4766984256356709608
-    second: human_movement_9
+      213: 1174831077580277098
+    second: human_movement3_9
   - first:
-      213: -5404175536557120265
-    second: human_movement_10
+      213: 4695904180208197004
+    second: human_movement3_10
   - first:
-      213: -1327809404559957027
-    second: human_movement_11
+      213: -2078293054180324179
+    second: human_movement3_11
   - first:
-      213: -5210623486445120352
-    second: human_movement_12
+      213: -3989388947317223577
+    second: human_movement3_12
   - first:
-      213: 4632833234746120928
-    second: human_movement_13
+      213: 8513451468023329540
+    second: human_movement3_13
   - first:
-      213: -4140269387622543300
-    second: human_movement_14
+      213: -2312101623803511331
+    second: human_movement3_14
   - first:
-      213: 6460405234452924253
-    second: human_movement_15
+      213: -5107223055649869906
+    second: human_movement3_15
   - first:
-      213: 3294913639731147894
-    second: human_movement_16
+      213: 380769565483237139
+    second: human_movement3_16
   - first:
-      213: -7123957251403541956
-    second: human_movement_17
+      213: 4420315415672297757
+    second: human_movement3_17
   - first:
-      213: -201496607459410777
-    second: human_movement_18
+      213: 4867703990756149000
+    second: human_movement3_18
   - first:
-      213: -2686881053409610565
-    second: human_movement_19
-  - first:
-      213: 6487222753335707806
-    second: human_movement_20
-  - first:
-      213: -6258210039583607316
-    second: human_movement_21
-  - first:
-      213: 6700670678820343361
-    second: human_movement_22
+      213: 1075488103870350701
+    second: human_movement3_19
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -196,7 +187,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: human_movement_0
+      name: human_movement3_0
       rect:
         serializedVersion: 2
         x: 40
@@ -210,20 +201,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f08d2f6b6f3aa280800000000000000
-      internalID: -9031336372078804744
+      spriteID: 82193c0e6eb721260800000000000000
+      internalID: 7066846996841337128
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: human_movement_1
+      name: human_movement3_1
       rect:
         serializedVersion: 2
         x: 72
-        y: 253
+        y: 254
         width: 14
-        height: 37
+        height: 36
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -231,14 +222,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0707ce90dc5f65d70800000000000000
-      internalID: 9031676363721699440
+      spriteID: f668dadeaf5a1a0d0800000000000000
+      internalID: -3413264545422145937
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: human_movement_2
+      name: human_movement3_2
       rect:
         serializedVersion: 2
         x: 104
@@ -252,14 +243,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 408fe30f7333babf0800000000000000
-      internalID: -312099433825241084
+      spriteID: b47567d68f3cfeb90800000000000000
+      internalID: -7210329006641096885
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: human_movement_3
+      name: human_movement3_3
       rect:
         serializedVersion: 2
         x: 138
@@ -273,14 +264,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32415b1135d9f6cc0800000000000000
-      internalID: -3715578187452443613
+      spriteID: aa480aa04849dbdb0800000000000000
+      internalID: -4774496735107971926
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: human_movement_4
+      name: human_movement3_4
       rect:
         serializedVersion: 2
         x: 170
@@ -294,14 +285,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 97533315b3fddf4d0800000000000000
-      internalID: -3099075522702658183
+      spriteID: 8343edcf587190fe0800000000000000
+      internalID: -1222419959613869000
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: human_movement_5
+      name: human_movement3_5
       rect:
         serializedVersion: 2
         x: 202
@@ -315,35 +306,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c4e045b9a4c91f50800000000000000
-      internalID: 6852724541190366406
+      spriteID: fa26bc516cbd4ed10800000000000000
+      internalID: 2154088165605597871
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: human_movement_6
-      rect:
-        serializedVersion: 2
-        x: 231
-        y: 254
-        width: 14
-        height: 36
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 406926846d9e9b5d0800000000000000
-      internalID: -3046146566392736252
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: human_movement_7
+      name: human_movement3_6
       rect:
         serializedVersion: 2
         x: 41
@@ -357,14 +327,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc6476ba98c246b80800000000000000
-      internalID: -8402542034968688945
+      spriteID: e324a0d384cd94150800000000000000
+      internalID: 5857454993191879230
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: human_movement_8
+      name: human_movement3_7
       rect:
         serializedVersion: 2
         x: 70
@@ -378,14 +348,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b591de3af2588ea0800000000000000
-      internalID: -5870350879528217162
+      spriteID: d53cb55d56cfa7fd0800000000000000
+      internalID: -2343283141791464611
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: human_movement_9
+      name: human_movement3_8
       rect:
         serializedVersion: 2
         x: 99
@@ -399,14 +369,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e47502bceab72240800000000000000
-      internalID: 4766984256356709608
+      spriteID: dc3482b4683e9ff80800000000000000
+      internalID: -8072170691158850611
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: human_movement_10
+      name: human_movement3_9
       rect:
         serializedVersion: 2
         x: 134
@@ -420,14 +390,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7f428a76bf28005b0800000000000000
-      internalID: -5404175536557120265
+      spriteID: a65034af3a6dd4010800000000000000
+      internalID: 1174831077580277098
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: human_movement_11
+      name: human_movement3_10
       rect:
         serializedVersion: 2
         x: 168
@@ -441,38 +411,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd3e7cfa16ca29de0800000000000000
-      internalID: -1327809404559957027
+      spriteID: c8dd490d8f33b2140800000000000000
+      internalID: 4695904180208197004
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: human_movement_12
+      name: human_movement3_11
       rect:
         serializedVersion: 2
         x: 200
-        y: 189
-        width: 14
-        height: 37
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0a49120db8520b7b0800000000000000
-      internalID: -5210623486445120352
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: human_movement_13
-      rect:
-        serializedVersion: 2
-        x: 232
         y: 190
         width: 14
         height: 36
@@ -483,14 +432,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ea9aacf7412b4040800000000000000
-      internalID: 4632833234746120928
+      spriteID: dac8b6e7a7b6823e0800000000000000
+      internalID: -2078293054180324179
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: human_movement_14
+      name: human_movement3_12
       rect:
         serializedVersion: 2
         x: 41
@@ -504,14 +453,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c3095549deeca86c0800000000000000
-      internalID: -4140269387622543300
+      spriteID: 76f894c93e7d2a8c0800000000000000
+      internalID: -3989388947317223577
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: human_movement_15
+      name: human_movement3_13
       rect:
         serializedVersion: 2
         x: 75
@@ -525,14 +474,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d5704a00558f7a950800000000000000
-      internalID: 6460405234452924253
+      spriteID: 403fe04010bd52670800000000000000
+      internalID: 8513451468023329540
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: human_movement_16
+      name: human_movement3_14
       rect:
         serializedVersion: 2
         x: 107
@@ -546,14 +495,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 674b3c58f72e9bd20800000000000000
-      internalID: 3294913639731147894
+      spriteID: ddd769cb2d3c9efd0800000000000000
+      internalID: -2312101623803511331
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: human_movement_17
+      name: human_movement3_15
       rect:
         serializedVersion: 2
         x: 136
@@ -567,35 +516,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c32160bcf9e922d90800000000000000
-      internalID: -7123957251403541956
+      spriteID: eafed4ba0bf7f19b0800000000000000
+      internalID: -5107223055649869906
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: human_movement_18
-      rect:
-        serializedVersion: 2
-        x: 171
-        y: 125
-        width: 14
-        height: 37
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7ac7fe037e3243df0800000000000000
-      internalID: -201496607459410777
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: human_movement_19
+      name: human_movement3_16
       rect:
         serializedVersion: 2
         x: 41
@@ -609,14 +537,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb4fac9eae746bad0800000000000000
-      internalID: -2686881053409610565
+      spriteID: 31f78e307e3c84500800000000000000
+      internalID: 380769565483237139
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: human_movement_20
+      name: human_movement3_17
       rect:
         serializedVersion: 2
         x: 75
@@ -630,14 +558,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e98086f29be370a50800000000000000
-      internalID: 6487222753335707806
+      spriteID: d199452637d185d30800000000000000
+      internalID: 4420315415672297757
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: human_movement_21
+      name: human_movement3_18
       rect:
         serializedVersion: 2
         x: 105
@@ -651,14 +579,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce5f5dc502f5629a0800000000000000
-      internalID: -6258210039583607316
+      spriteID: 80785c84dfe8d8340800000000000000
+      internalID: 4867703990756149000
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: human_movement_22
+      name: human_movement3_19
       rect:
         serializedVersion: 2
         x: 136
@@ -672,8 +600,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 14e46ff0b709dfc50800000000000000
-      internalID: 6700670678820343361
+      spriteID: d65c9577bb6ecee00800000000000000
+      internalID: 1075488103870350701
       vertices: []
       indices: 
       edges: []
