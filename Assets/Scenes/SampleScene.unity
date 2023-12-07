@@ -3905,6 +3905,7 @@ MonoBehaviour:
   difficultyLevel: 1
   currentDir: 0
   playerObject: {fileID: 656353784}
+  counterTarget: 50
 --- !u!1001 &652223928241445392
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3922,11 +3923,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 652223928874662622, guid: e9672cbc12a0e5a4f99dcf531b9a9191, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.38
+      value: -1.68
       objectReference: {fileID: 0}
     - target: {fileID: 652223928874662622, guid: e9672cbc12a0e5a4f99dcf531b9a9191, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.11
+      value: -0.91
       objectReference: {fileID: 0}
     - target: {fileID: 652223928874662622, guid: e9672cbc12a0e5a4f99dcf531b9a9191, type: 3}
       propertyPath: m_LocalPosition.z

@@ -9,11 +9,14 @@ public class EnemyBehaviour : MonoBehaviour
     public int currentDir = 0;
     public GameObject playerObject;
 
+    public int counterTarget = 10;
+
     private Move moveScript;
     private int nextDir = 0;
     private Rigidbody2D playerRB;
     private Vector2 prevDist;
     private Vector2 currentDist;
+    private int counter;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +30,7 @@ public class EnemyBehaviour : MonoBehaviour
 
         playerRB = playerObject.GetComponent<Rigidbody2D>();
         prevDist = findDistance(playerRB);
+        counter = 0;
     }
 
     void FixedUpdate()
@@ -37,14 +41,17 @@ public class EnemyBehaviour : MonoBehaviour
                 //difficulty level 1
                 //if distance increased
                 currentDist = findDistance(playerRB);
-                if(currentDist.magnitude > prevDist.magnitude)
+                counter = counter + 1;
+                if(currentDist.magnitude > prevDist.magnitude && counter > counterTarget)
                 {
                     //change direction
                     nextDir = moveScript.RandomNearbyDirection(currentDir);
                     moveScript.ChangeDirTo(nextDir);
                     currentDir = nextDir;
+                    counter = 0;
                 }
                 prevDist = currentDist;
+                
                 break;
             default:
                 //idk yet
