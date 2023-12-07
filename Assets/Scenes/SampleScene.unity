@@ -3830,10 +3830,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1
   objectToMove: {fileID: 656353784}
-  rigidbody: {fileID: 0}
-  animator: {fileID: 0}
-  h: 0
-  v: 0
 --- !u!4 &1639943261
 Transform:
   m_ObjectHideFlags: 0
@@ -3894,10 +3890,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1
   objectToMove: {fileID: 776085707}
-  rigidbody: {fileID: 0}
-  animator: {fileID: 0}
-  h: 0
-  v: 0
 --- !u!114 &1697485183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3912,6 +3904,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   difficultyLevel: 1
   currentDir: 0
+  playerObject: {fileID: 656353784}
 --- !u!1001 &652223928241445392
 PrefabInstance:
   m_ObjectHideFlags: 0
