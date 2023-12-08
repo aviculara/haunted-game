@@ -6,13 +6,13 @@ using UnityEngine;
 public class EnemyBehaviour : MonoBehaviour
 {
     public int behaviourLevel = 1;
-    public int currentDir = 0;
+    //public int currentDir = 0;
     public GameObject playerObject;
 
     public int counterTarget = 10;
 
     private Move moveScript;
-    private int nextDir = 0;
+    //private int nextDir = 0;
     private Rigidbody2D playerRB;
     private Vector2 prevDist;
     private Vector2 currentDist;
@@ -74,6 +74,7 @@ public class EnemyBehaviour : MonoBehaviour
             case 1:
                 //difficulty level 1
                 //if distance increased
+                /*
                 currentDist = findDistance(playerRB);
                 counter = counter + 1;
                 if( counter > counterTarget && currentDist.magnitude > prevDist.magnitude)
@@ -85,7 +86,7 @@ public class EnemyBehaviour : MonoBehaviour
                     counter = 0;
                 }
                 prevDist = currentDist;
-                
+                */
                 break;
             default:
                 //idk yet

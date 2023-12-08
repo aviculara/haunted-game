@@ -11,13 +11,21 @@ public class BorderCollision : MonoBehaviour
         if(collision.gameObject.tag == "Enemy")
         {
             Move moveScript = moveEnemy.GetComponent<Move>();
-            int currentDir = moveEnemy.GetComponent<EnemyBehaviour>().currentDir;
-            moveScript.ChangeOppositeDir(currentDir);
+            //int currentDir = moveEnemy.GetComponent<EnemyBehaviour>().currentDir;
+            moveScript.ChangeOppositeDir();
         }
         else if(collision.gameObject.tag == "Player")
         {
-            //fall back
+            Debug.Log("collision with player");
+            Move moveScript = movePlayer.GetComponent<Move>();
+            if (moveScript == null)
+            {
+                Debug.Log("null object");
+            }
+            moveScript.Fall();
+
         }
     }
+ 
 }
 

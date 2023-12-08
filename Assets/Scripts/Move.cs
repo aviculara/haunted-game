@@ -10,18 +10,19 @@ public class Move : MonoBehaviour
     public int startingDir = 0;
     private new Rigidbody2D rigidbody;
     private Animator animator;
-    //[Header("Move parameters")]
+    [Header("Move parameters")]
+    public int currentDirection;
     private float h = 0f;
     private float v = 0f;
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("Move script start");
         rigidbody = objectToMove.GetComponent<Rigidbody2D>();
         animator = objectToMove.GetComponent<Animator>();
         ChangeDirTo(startingDir);
+        currentDirection = startingDir;
         //Vector2 dir = new Vector2(h, v);
-        
+
 
     }
 
@@ -33,24 +34,29 @@ public class Move : MonoBehaviour
         h = 0;
         v = 1;
         animator.SetInteger("MoveDir", 1);
+        currentDirection = 1;
+
     }
     public void ChangeDirDown()
     {
         h = 0;
         v = -1;
         animator.SetInteger("MoveDir", 2);
+        currentDirection = 2;
     }
     public void ChangeDirRight()
     {
         h = 1;
         v = 0;
         animator.SetInteger("MoveDir", 0);
+        currentDirection = 0;
     }
     public void ChangeDirLeft()
     {
         h = -1;
         v = 0;
         animator.SetInteger("MoveDir", 3);
+        currentDirection = 3;
     }
 
     public void ChangeDirTo(int newDir)
@@ -76,12 +82,12 @@ public class Move : MonoBehaviour
         }
     }
 
-    public int RandomNearbyDirection(int currentDir)
+    public int RandomNearbyDirection()
     {
         Debug.Log("inside randomnearbydirection");
         int newDir;
         int[] nearDirs;
-        switch (currentDir)
+        switch (currentDirection)
         {
             case 0:
                 nearDirs = new int[] { 0, 1, 2 };
@@ -99,7 +105,7 @@ public class Move : MonoBehaviour
             default:
                 nearDirs = new int[] { 0 };
                 //returns Right as default
-                Debug.LogWarning("Unexpected currentDir value: " + currentDir);
+                Debug.LogWarning("Unexpected currentDir value: " + currentDirection);
                 break;
 
         }
@@ -117,9 +123,10 @@ public class Move : MonoBehaviour
         Debug.Log("it works");
     }
 
-    public void ChangeOppositeDir(int currentDir)
+    public void ChangeOppositeDir()
     {
-        switch (currentDir)
+        
+        switch (currentDirection)
         {
             case 0:
                 ChangeDirLeft();
@@ -158,5 +165,22 @@ public class Move : MonoBehaviour
         //1 = up
         //2 = down
         //3 = left
+    }
+
+    public void Fall()
+    {
+        StartCoroutine(FallCoroutine());
+        
+    }
+
+    private IEnumerator FallCoroutine()
+    {
+        speed = 0;
+        animator.SetBool("Fall", true);
+        
+        yield return new WaitForSeconds(1.0f);
+        animator.SetBool("Fall", false);
+        ChangeOppositeDir();
+        speed = 1;
     }
 }
