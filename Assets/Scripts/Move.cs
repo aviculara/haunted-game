@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class Move : MonoBehaviour
 {
+    [Header("Settings")]
     public float speed = 1f;
     public GameObject objectToMove;
     public int startingDir = 0;
     private new Rigidbody2D rigidbody;
     private Animator animator;
+    //[Header("Move parameters")]
     private float h = 0f;
     private float v = 0f;
     // Start is called before the first frame update

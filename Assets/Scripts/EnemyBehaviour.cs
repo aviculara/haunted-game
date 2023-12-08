@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class EnemyBehaviour : MonoBehaviour
 {
-    public int difficultyLevel = 1;
+    public int behaviourLevel = 1;
     public int currentDir = 0;
     public GameObject playerObject;
 
@@ -35,14 +35,48 @@ public class EnemyBehaviour : MonoBehaviour
 
     void FixedUpdate()
     {
-        switch (difficultyLevel)
+        switch (behaviourLevel)
         {
+            case 0:
+                moveScript.speed = 0.5f;
+                currentDist = findDistance(playerRB);
+                counter = counter + 1;
+                int rand = Random.Range(0, 100);
+                if (counter > counterTarget && rand < 50)
+                {
+                    //horizontal choice
+                    if (currentDist.x > 0)
+                    {
+                        moveScript.ChangeDirRight();
+                    }
+                    else if(currentDist.x < 0)
+                    {
+                        moveScript.ChangeDirLeft();
+                    }
+                    
+                    counter = 0;
+                }
+                else if(counter > counterTarget)
+                {
+                    //vertical choice
+                    if(currentDist.y > 0)
+                    {
+                        moveScript.ChangeDirUp();
+                    }
+                    else if(currentDist.y < 0)
+                    {
+                        moveScript.ChangeDirDown();
+                    }
+                    
+                    counter = 0;
+                }
+                break;
             case 1:
                 //difficulty level 1
                 //if distance increased
                 currentDist = findDistance(playerRB);
                 counter = counter + 1;
-                if(currentDist.magnitude > prevDist.magnitude && counter > counterTarget)
+                if( counter > counterTarget && currentDist.magnitude > prevDist.magnitude)
                 {
                     //change direction
                     nextDir = moveScript.RandomNearbyDirection(currentDir);

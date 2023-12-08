@@ -4327,7 +4327,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb9aa05090b26324e805ee58b22c4698, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 0.5
   objectToMove: {fileID: 776085707}
   startingDir: 1
 --- !u!114 &1697485183
