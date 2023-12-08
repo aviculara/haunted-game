@@ -6,6 +6,7 @@ public class Move : MonoBehaviour
 {
     public float speed = 1f;
     public GameObject objectToMove;
+    public int startingDir = 0;
     private new Rigidbody2D rigidbody;
     private Animator animator;
     private float h = 0f;
@@ -16,9 +17,9 @@ public class Move : MonoBehaviour
         Debug.Log("Move script start");
         rigidbody = objectToMove.GetComponent<Rigidbody2D>();
         animator = objectToMove.GetComponent<Animator>();
-        h = 1;
+        ChangeDirTo(startingDir);
         //Vector2 dir = new Vector2(h, v);
-        animator.SetInteger("MoveDir", 0);
+        
 
     }
 
@@ -113,6 +114,32 @@ public class Move : MonoBehaviour
     {
         Debug.Log("it works");
     }
+
+    public void ChangeOppositeDir(int currentDir)
+    {
+        switch (currentDir)
+        {
+            case 0:
+                ChangeDirLeft();
+                break;
+            case 1:
+                ChangeDirDown();
+                break;
+            case 2:
+                ChangeDirUp();
+                break;
+            case 3:
+                ChangeDirRight();
+                break;
+            default:
+                //idk
+                ChangeDirRight();
+                Debug.Log("unexpected current dir value");
+                break;
+        }
+    }
+
+
     void FixedUpdate()
     {
         //float h = Input.GetAxis("Horizontal"); //horizontal axis input
