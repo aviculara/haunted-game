@@ -17,12 +17,12 @@ public class BorderCollision : MonoBehaviour
         else if(collision.gameObject.tag == "Player")
         {
             Debug.Log("collision with player");
-            Move moveScript = movePlayer.GetComponent<Move>();
-            if (moveScript == null)
+            PlayerController controllerScript = movePlayer.GetComponent<PlayerController>();
+            if (controllerScript == null)
             {
                 Debug.Log("null object");
             }
-            moveScript.Fall();
+            controllerScript.Fall();
 
         }
     }
