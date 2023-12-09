@@ -30,14 +30,17 @@ public class PlayerController : MonoBehaviour
     private IEnumerator FallCoroutine()
     {
         buttonsEnabled = false;
-        moveScript.speed = 0;
+        moveScript.speed = -0.5f;
         animator.SetBool("Fall", true);
 
-        yield return new WaitForSeconds(1.0f);
-        animator.SetBool("Fall", false);
-        moveScript.ChangeOppositeDir();
-        moveScript.speed = 1;
+        yield return new WaitForSeconds(0.3f);
+        moveScript.speed = 0;
         buttonsEnabled = true;
+        yield return new WaitForSeconds(0.7f);
+        animator.SetBool("Fall", false);
+        //moveScript.ChangeOppositeDir();
+        moveScript.speed = 1;
+        
     }
 
     public void ButtonUp()
