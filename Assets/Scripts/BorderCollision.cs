@@ -16,7 +16,7 @@ public class BorderCollision : MonoBehaviour
         }
         else if(collision.gameObject.tag == "Player")
         {
-            Debug.Log("collision with player");
+            //Debug.Log("collision with player");
             PlayerController controllerScript = movePlayer.GetComponent<PlayerController>();
             if (controllerScript == null)
             {
