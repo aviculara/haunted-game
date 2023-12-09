@@ -167,20 +167,5 @@ public class Move : MonoBehaviour
         //3 = left
     }
 
-    public void Fall()
-    {
-        StartCoroutine(FallCoroutine());
-        
-    }
-
-    private IEnumerator FallCoroutine()
-    {
-        speed = 0;
-        animator.SetBool("Fall", true);
-        
-        yield return new WaitForSeconds(1.0f);
-        animator.SetBool("Fall", false);
-        ChangeOppositeDir();
-        speed = 1;
-    }
+    
 }
