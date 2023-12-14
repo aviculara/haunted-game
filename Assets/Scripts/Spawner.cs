@@ -22,11 +22,6 @@ public class Spawner : MonoBehaviour
         //StartCoroutine(SpawnObjects());
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public void SpawnObject()
     {

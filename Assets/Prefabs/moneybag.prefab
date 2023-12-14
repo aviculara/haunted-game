@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6169195488453105649}
   - component: {fileID: 9096979755227591287}
   - component: {fileID: 681643891129663041}
+  - component: {fileID: 4817262482211271172}
   m_Layer: 0
   m_Name: moneybag
   m_TagString: Untagged
@@ -93,9 +94,22 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.35}
   m_Size: {x: 0.37, y: 1.18}
   m_Direction: 0
+--- !u!114 &4817262482211271172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 90928025918543533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2370c66d52575f341876699495296096, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 10
