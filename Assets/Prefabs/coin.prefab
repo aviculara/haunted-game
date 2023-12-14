@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7182144983814216718}
   - component: {fileID: 7903998252307030091}
   - component: {fileID: 425775040248167803}
+  - component: {fileID: -4894622656767011287}
   m_Layer: 0
   m_Name: coin
   m_TagString: Untagged
@@ -99,3 +100,17 @@ CapsuleCollider2D:
   m_Offset: {x: 0.015, y: -0.3}
   m_Size: {x: 0.29, y: 0.9}
   m_Direction: 0
+--- !u!114 &-4894622656767011287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5226450596706644790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2370c66d52575f341876699495296096, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawner: {fileID: 0}
+  points: 1
