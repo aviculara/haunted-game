@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     private Move moveScript;
     private Animator animator;
+    
     public GameObject playerObject;
     public bool buttonsEnabled = true ;
 
@@ -18,6 +19,7 @@ public class PlayerController : MonoBehaviour
             Debug.Log("null");
         }
         animator = playerObject.GetComponent<Animator>();
+        
     }
 
     
@@ -62,4 +64,6 @@ public class PlayerController : MonoBehaviour
     {
         if (buttonsEnabled) moveScript.ChangeDirLeft();
     }
+
+    
 }
