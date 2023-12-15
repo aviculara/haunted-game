@@ -8,17 +8,22 @@ public class GameManager : MonoBehaviour
 {
     public int score = 0;
     public Text scoreText;
+    public GameObject pixelTextObject;
+    private TextMesh textMesh;
     public GameObject gameOverPanel;
 
     // Start is called before the first frame update
     void Start()
     {
         scoreText.text = score.ToString();
+        textMesh = pixelTextObject.GetComponent<TextMesh>();
+        textMesh.text = score.ToString();
     }
 
     public void IncreaseScore(int addedPoints)
     {
         score = score + addedPoints;
+        textMesh.text = score.ToString();
         scoreText.text = score.ToString();
     }
 
